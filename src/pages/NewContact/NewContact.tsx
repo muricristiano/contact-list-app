@@ -1,6 +1,10 @@
+import { getCountryCodes } from '../../queries/queries';
+
 import { NewContactStyles } from "./NewContact-styles";
 
 export function NewContact() {
+    getCountryCodes()
+    
     return (
         <NewContactStyles>
             <h1>New Contact</h1>
@@ -13,7 +17,9 @@ export function NewContact() {
 
                 <div className="input_form">
                     <label htmlFor="country">Country: </label>
-                    <input type="text" id="country"></input>
+                    <select id="country">
+                        <option selected hidden>Select a Country</option>
+                    </select>
                 </div>
 
                 <div className="input_form">
