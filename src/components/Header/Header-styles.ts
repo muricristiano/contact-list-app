@@ -16,7 +16,7 @@ export const HeaderStyles = styled.header`
         display: flex;
         align-items: center;
         color: #F1EFEF;
-        border: 1px solid #8b5cf6;
+        border: 4px solid #8b5cf6;
         border-radius: 8px;
         padding: 0.5rem 1rem;
         gap: 0.5rem;
