@@ -1,7 +1,12 @@
-import './styles/App.css'
+import { BrowserRouter } from 'react-router-dom'
+import { GlobalStyle } from './styles/global.ts'
+import { Router } from './Router'
 
 export function App() {
   return (
-    <h1>React Contact List Project</h1>
+      <BrowserRouter>
+        <GlobalStyle/>
+        <Router />
+      </BrowserRouter>
   )
 }
