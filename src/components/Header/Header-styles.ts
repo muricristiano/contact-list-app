@@ -6,9 +6,10 @@ export const HeaderStyles = styled.header`
     align-items: center;
 
     nav {
+        margin-top: 2rem;
         display: flex;
         width: 100%;
-        padding: 1rem 0;
+        /* padding: 0.5rem 0; */
         justify-content: space-between;
     }
 
@@ -16,7 +17,7 @@ export const HeaderStyles = styled.header`
         display: flex;
         align-items: center;
         color: #F1EFEF;
-        border: 4px solid #8b5cf6;
+        border: 4px solid gray;
         border-radius: 8px;
         padding: 0.5rem 1rem;
         gap: 0.5rem;
@@ -29,13 +30,23 @@ export const HeaderStyles = styled.header`
         color: #8b5cf6;
     }
 
+    a.active {
+        border: 4px solid #8b5cf6;
+        transition: all 0.3s ease;
+
+        .icon {
+            color: #8b5cf6;
+        }
+    }
+
     a:hover{
-        border: 2px solid #ab8cf6;
+        border: 4px solid #ab8cf6;
         transition: all 0.3s ease;
 
         .icon {
             color: #ab8cf6;
         }
     }
+
 
 `

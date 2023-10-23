@@ -1,5 +1,9 @@
+import { ListStyles } from "./List-styles";
+
 export function List() {
     return (
-        <h1>List Page</h1>
+        <ListStyles>
+            <p>List Page</p>
+        </ListStyles>
     )
 }
